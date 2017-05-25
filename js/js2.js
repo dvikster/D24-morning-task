@@ -19,6 +19,7 @@ function getEvents() {
         a=parseInt(a);
         key=parseInt(key);
         if(key<=a){
+
             console.log('значение ключа -' + key);
             out += '<li>'+eventArray[key]+'</li>';
         }
@@ -29,6 +30,8 @@ function getEvents() {
     else {
         $('.events').html(out);
     }
+
+
 }
 
 
