@@ -11,19 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <p> Задание 1. Создайте JSON файл содержащий следующий массив:<br>
+            {“1” : “Событие один”,<br>
+            “2” : “Событие два”,<br>
+            ...<br>
+            “10”: “Событие десять”<br>
+            }<br>
+            Создайте HTML файл в который добавьте input[type=range]. Минимальное значение  - 0, максимальное – 11. Создайте скрипт, который при изменении положения ползунка будет выводить те записи индексы которых меньше или равны значению положения ползунка. Т.е. при положении со значением 3 – выводятся записи с id =1, 2,3. Если записей нет – выводится запись «Записей нет». Записи выводятся в виде списка. Тип списка  - маркированный, диск.<br>
+            Для реализации используйте Materialize.
+            </p>
+        </div>
+    </div>
+</div>
 
-<br><br><br><br>
 
 <div class="container">
     <div class="row">
         <div class="col s12 m12 l12">
             <form action="#">
                 <p class="range-field">
-                    <input type="range" id="event-range" min="1" max="12" value="0"/>
+                    <input type="range" id="event-range" min="0" max="12" value="0"/>
                 </p>
             </form>
-
-            <ul class="events2"></ul>
             <p class="events"></p>
         </div>
     </div>
