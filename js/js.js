@@ -22,7 +22,7 @@ function getEvents() {
         if(+a >= +key){
 
             console.log('значение ключа -' + key);
-            out += eventArray[key]+'<br>';
+            out += '<li>'+eventArray[key]+'</li><br>';
         }
         else if( a != key){
             console.log('Записей нет ');
