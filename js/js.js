@@ -15,14 +15,16 @@ function getEvents() {
     var out ='';
     var out2 ='';
     console.log('значение инпута - ' + a);
-
+    // out2 ='';
 
     for(key in eventArray){
+
         if(+a >= +key){
+
             console.log('значение ключа -' + key);
             out += eventArray[key]+'<br>';
         }
-        else if( a >= key){
+        else if( a != key){
             console.log('Записей нет ');
             out2 = 'Записей нет ';
         }
@@ -32,22 +34,6 @@ function getEvents() {
 
 }
 
-//     $.post(
-//         //куда
-//         'a3.php',
-//         //что
-//         {
-//             'sex': $( 'input[type=radio]:checked' ).val(),
-//             'height':$('input[type=range]').val()
-//         },
-//         //и что потом
-//         ifSuccess
-//     );
-// }
-// function ifSuccess(data) {
-//     //все данные от сервера передаются в dиде строки в переменную data
-//     $('p.ideal').html(data);
-// }
 
 
 //  "1": "Событие один",
