@@ -24,7 +24,7 @@ function getEvents() {
         }
     }
     if (out==''){
-        $('.events').html('empty');
+        $('.events').html('Записей нет');
     }
     else {
         $('.events').html(out);
